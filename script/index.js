@@ -23,20 +23,7 @@ const loadModal = async (id) =>{
   displayModal(data.data)
 }
 
-// "id": 33,
-// "title": "Add bulk operations support",
-// "description": "Allow users to perform bulk actions like delete, update status on multiple items at once.",
-// "status": "open",
-// "labels": [
-// "enhancement"
-// ],
-// "priority": "low",
-// "author": "bulk_barry",
-// "assignee": "",
-// "createdAt": "2024-02-02T10:00:00Z",
-// "updatedAt": "2024-02-02T10:00:00Z"
-// }
-// }
+
 const displayModal = (issue) =>{
   const modalContainer = document.getElementById("modal-container");
   modalContainer.innerHTML = `
