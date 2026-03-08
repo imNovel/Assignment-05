@@ -22,10 +22,7 @@ const loadModal = async (id) =>{
   const data = await res.json();
   displayModal(data.data)
 }
-// {
-// "status": "success",
-// "message": "Issue fetched successfully",
-// "data": {
+
 // "id": 33,
 // "title": "Add bulk operations support",
 // "description": "Allow users to perform bulk actions like delete, update status on multiple items at once.",
