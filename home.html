@@ -29,13 +29,13 @@
 </head>
 
 <body>
-    <header class="w-[1600px] mx-auto py-4  border-b-1 border-gray-100 ">
-        <div class="w-[90%] mx-auto flex justify-between text-center items-center ">
+    <header class="md:w-[1600px] mx-auto py-4  border-b-1 border-gray-100 ">
+        <div class="w-[90%] mx-auto md:flex justify-between text-center items-center space-y-4">
             <div class="flex text-center items-center">
                 <img class="w-9" src="./assets/github-logo.png" alt="">
                 <h1 class="text-2xl font-semibold">GitHub Issues Tracker</h1>
             </div>
-            <div class="gap-4">
+            <div class="md:flex  gap-4">
                 <input type="text" id="search-issue" placeholder="Search-issues..."
                     class="input input-bordered w-24 md:w-auto" />
                 <button id="btn-search" class="btn bg-primary text-white">Search</button>
@@ -44,8 +44,8 @@
         </div>
     </header>
 
-    <section class="w-[1600px] mx-auto">
-        <div class="w-[70%] mx-auto rounded-lg shadow-sm mt-15 p-6">
+    <section class="md:w-[1600px] md:mx-auto">
+        <div class="md:w-[70%] md:mx-auto rounded-lg shadow-sm mt-15 p-6">
             <button id="all-btn" onclick="switchBtn('all')"
                 class="btn w-[120px] bg-transparent text-[#64748B]">All</button>
             <button id="open-btn" onclick="switchBtn('open')"
@@ -55,9 +55,9 @@
         </div>
     </section>
 
-    <section class="w-[1600px] mx-auto">
-        <div class="w-[70%] mx-auto rounded-lg shadow-sm">
-            <div class=" mt-15 p-6 flex justify-between items-center">
+    <section class="md:w-[1600px] md:mx-auto">
+        <div class="md:w-[70%] md:mx-auto rounded-lg shadow-sm">
+            <div class=" mt-15 p-6 md:flex space-y-4 justify-between items-center">
                 <div class="flex gap-2">
                     <img class="p-3 bg-purple-300 rounded-full" src="./assets/Aperture.png" alt="">
                     <div>
@@ -84,13 +84,13 @@
             </div>
 
             <!-- Cards -->
-            <div id="issue-container" class="p-6 grid grid-cols-4 gap-3 bg-[#FBFBFB]">
+            <div id="issue-container" class="p-6 grid grid-cols-1 md:grid-cols-4 gap-1 bg-[#FBFBFB]">
 
             </div>
-            <div id="open-issue-container" class="p-6 grid grid-cols-4 gap-3 bg-[#FBFBFB]">
+            <div id="open-issue-container" class="p-6 grid grid-cols-1 md:grid-cols-4 gap-3 bg-[#FBFBFB]">
 
             </div>
-            <div id="closed-issue-container" class="p-6 grid grid-cols-4 gap-3 bg-[#FBFBFB]">
+            <div id="closed-issue-container" class="p-6 grid grid-cols-1 md:grid-cols-4 gap-3 bg-[#FBFBFB]">
 
             </div>
 
